@@ -1,26 +1,22 @@
-using System;
-using Xunit;
 
-namespace buenas_practicas_desarrollo2
+public class GreeterShould
 {
-    public class GreeterShould
+    [Fact]
+    public void Greet()
     {
-        [Fact]
-        public void Greet()
-        {
-            var greeter = new Greeter();
+        var greeter = new Greeter();
 
-            var greet = greeter.Greet("Bob");
+        var greet = greeter.Greet("Mercedes");
 
-            Assert.Equal("Hello, Bob", greet);
-        }
-    }
-
-    public class Greeter
-    {
-        public string Greet(string name)
-        {
-            return "Hello, Bob";
-        }
+        Assert.Equal("Hello, Mercedes", greet);
     }
 }
+
+public class Greeter
+{
+    public string Greet(string name)
+    {
+        return $"Hello, {name}";
+    }
+}
+

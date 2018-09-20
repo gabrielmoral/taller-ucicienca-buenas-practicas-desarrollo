@@ -11,15 +11,3 @@ public bool SubmitCreditCardOrder(ContactInformation customerInfo, CreditCard ca
 {
     // … submit order
 }
-
-
-public bool FilterOrderBy(DateTime startDate, DateTime endDate)
-{
-    //...
-}
-
-
-public bool FilterOrderBy(Range range)
-{
-    //...
-}
