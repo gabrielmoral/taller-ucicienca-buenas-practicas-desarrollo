@@ -20,9 +20,9 @@ public class GreeterShould
     [Fact]
     public void Shout()
     {
-        var greet = Greeter.Greet("JERRY");
+        var greet = Greeter.Greet("MARITZA");
 
-        Assert.Equal("HELLO, JERRY", greet);
+        Assert.Equal("HELLO, MARITZA", greet);
     }
 }
 
